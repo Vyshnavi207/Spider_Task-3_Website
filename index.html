@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="login" onclick="login">SignUp</div> -->
+    <div class="maindiv" id="home">
+        <div class="container">
+        <header class="main">AUCTION</header>
+        <h1 class= "heading">ANCIENT</h1></div>
+        <!-- <img src="relics.gif" width="100%" height="900vh" position="fixed" margin="0" padding="0"> -->
+    </div>
+    <div class="control">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#vendor" onclick="myaccount('visible')">Auctioneer Login</a>
+            <div  class="account">
+                <ul>
+                    <li><a id="hold" href="#" >Vendor Account</a></li>
+                    <li><a id="close" onclick="myaccount('close')" >+</a></li>
+                </ul>
+            </div></li>
+        <li><a href="#signin">Bidder Login</a></li>
+        <li><a href="#register">Bidder Registration</a></li>
+        <li><a href="#profilepage">My Account</a></li>  
+    </ul>
+    </div>
+
+    <div id="move">
+
+        <div id="home"></div>
+        <div id="about"><a1>About</a1></div>
+        <div id="vendor" style="padding-top: 35px;
+        background: url(online.jpg);
+        background-size: 250px">
+    
+            <user id="sender" >
+            <h>VendorLogin</h>
+            <form>
+                <b>Username</b>
+                <input type="text" name="" placeholder="Enter User name">
+                <b>Password</b>
+                <input type="password" name="" placeholder="Enter Password">
+                <input type="submit" name="" value="Login">
+                <e onclick="window.location.href='#register'">Register?Create a new Account</e>
+            </form>
+            </user>
+        </div>
+        <div id="signin">
+        <user id="userinfo">
+            <h>Sign Up</h>
+            <form>
+                <b>Username</b>
+                <input type="text" name="" placeholder="Enter User name">
+                <b>Password</b>
+                <input type="password" name="" placeholder="Enter Password">
+                <input type="submit" name="" value="Login">
+                <d href="#">Forgot Password?</d>
+                <e onclick="window.location.href='#register'">Register?Create a new Account</e>
+            </form>
+        </user></div>
+        <div id="register" style="padding-left: 300px; padding-top: 35px;">
+            <complete id ="regist">
+            <h>Registration</h>
+            <form>
+                <b>Full Name/Username:</b>
+                <input type="text" name="" placeholder="Enter Full Name">
+                <b>Email Id:</b>
+                <input type="text" name="" placeholder="Enter Email Id">
+                <b>Phone No:</b>
+                <input type="text" name="" placeholder="Enter Phone No">
+                <b>Set Password</b>
+                <input type="password" name="" placeholder="Enter Password">
+                <button type="submit"  onclick="window.location.href='#profilepage'" >Register</button>
+            </form>
+        </complete>
+        </div>
+        
+        <div id="products" style="width: 950px;height: 570px;">
+        <div id="glass" style="color: green;font-size: 22px;margin-top: 20px; background-color: white; padding-top: 10px;padding-bottom: 5px;
+        font-weight: 900;">You Have Successfully Logged In :)  </div>
+        <div id="profilepage" style="width: 300px;
+         height: 580px;
+         background-color: teal;
+         margin-right: 1340px;">
+        
+            <div class="menubar" >
+                <img src="profile.png" width="200px" height="200px" padding="30px">
+                <a href="#profile"><f>About</f></a>
+                <a href="#products"><f>Products</f></a>
+                <a href="#bid"><f>Highest Bid</f></a>
+                <a href="#logout"><f>Logout</f></a>
+            </div>
+            <!-- <div id="products" style="background-color: black;"></div> -->
+        </div>
+    
+    </div> 
+    </div>
+    <!-- <div id="register"></div> -->
+    <script src="website.js"></script>
+</body>
+</html>
